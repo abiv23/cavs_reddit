@@ -1,0 +1,1637 @@
+html {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-color: #E9E7E9;
+}
+
+/*Main body content*/
+body {
+    display: block;
+    margin-bottom: 23px;
+    background-color: #FFFFFF;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*Font color (wine color) for sub*/
+a {
+    color: #860038;
+}
+
+/* SIDEBAR PIC, replace the size of "padding-bottom" to the height of the image, width 300 */
+.side::before {
+	display: block;
+	content: "";
+	padding-top: 310px; /*Change this if image height is different, original is 325px*/
+        margin-top: 10=px;
+	width: 300px;
+	border-radius: 5px 5px 5px 5px;
+	background-size:contain;
+	background-size:300px;
+       /*Change sidebar pic: 315px by 310px*/
+       background: url(%%don%%) top center no-repeat;
+       content: "";
+       font-size: 13px;
+       text-align: center;
+}
+
+/*Remove reddit logo header img*/
+#header-img {
+    display: none;
+    visibility:hidden!important;
+    /*margin-top: 130px;
+    opacity: 1;*/
+}
+
+/*Add custom logo*/
+.pagename a {
+    /*Change Cle Wingfoot logo*/
+    background: url(%%c-logo-2022%%);
+    background-repeat: no-repeat;
+    width: 253px;
+    height: 180px;
+    z-index: 6;
+    position: absolute;
+    top: -200px;
+    left: 25px;
+    text-indent: -9999px;
+}
+
+/*Section above banner with My Subreddit, Dashboard, Home, Popular options etc*/
+.res-navTop #userbarToggle.userbarShow {
+    top: auto !important;
+    bottom: 0 !important;
+    background-color: #ffffff;
+}
+.res-navTop #userbarToggle.userbarHide {
+    background-color: #ffffff;
+}
+#userbarToggle {
+    color: #860038 !important;
+    border-right: 1px solid #fff !important;
+}
+#srDropdown {
+    color: #F9AF46 !important;
+    font-family: Verdana, Geneva, sans-serif;
+    width: 110px;
+    background: url(%%mysubredditsarrow%%) no-repeat 100px;
+    padding-right: 5px;
+}
+#srDropdown a {
+    color: #F9AF46 !important;
+}
+.dropdown.srdrop .selected {
+    color: #F9AF46;
+    font-family: Verdana, Geneva, sans-serif;
+    background: url(%%mysubredditsarrow%%) no-repeat 98px;
+    font-size: 10px;
+}
+
+#sr-header-area {
+    width: 100%;
+    height: 19px;
+    position: absolute;
+    background: rgb(114, 37, 61);
+    border-bottom: none!important;
+}
+
+#sr-header-area a {
+    font-family: Verdana, Geneva, sans-serif;
+    color: white;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+#sr-header-area a:hover {
+    font-family: Verdana, Geneva, sans-serif;
+    color: #F9AF46;
+}
+
+/*Tab Menu - Top, Hot, Rising etc.*/
+#header-bottom-left .tabmenu {
+    position: absolute;
+    font-family: "Arial";
+    left: 20px;
+    right: 280;
+    top: -17px;
+    background-color: rgb(114, 37, 61);
+    text-align: left;
+    z-index: 5;
+}
+
+#header-bottom-left .tabmenu li a:hover{
+    color: #F9AF46 !important;
+    padding-bottom: 4px;
+    border-top: 0px;
+    border-bottom: 2px solid;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#header-bottom-left .tabmenu li a {
+    background-color: transparent;
+    /*color: #F9AF46;*/
+    color: #FFFFFF;
+    padding: 5px 20px 5px 20px;
+    margin-bottom: 10px;
+    font: 400 16px/32px Lato,Arial,sans-serif;
+    text-shadow: 1px 1px rgba(0,0,0,0.75);
+    text-transform: uppercase;
+}
+
+#header-bottom-left .tabmenu li.selected a{
+    background-color: transparent;
+    padding-bottom: 4px;
+    color: #F9AF46;
+    border-top: 0px;
+    border-bottom: 2px solid;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+/* Code for post styling starts Here
+**
+*/
+/* Spacing under the menu tab, for the first post on the sub*/
+#siteTable{
+   margin: 6px 6px 0;
+   padding-top: 1px;
+}
+
+#siteTable .thing {
+   border-bottom: 1px solid #dbdbdb;
+   margin: 4px 4px 4px 0;
+   padding-bottom: 9px;
+}
+
+.content{
+    overflow: none;
+}
+.link {
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+.comments-page .link {
+    padding-top: 10px;
+}
+.link.stickied {
+    border-color: #FEB931;
+    padding-top: 10px;
+}
+
+#sr-more-link {
+    margin-top: 30px;
+    background-color: transparent;
+}
+.link .rank {
+    display: none;
+}
+
+.link .title{
+    position: relative;
+    margin: 2px 0px 0px 0px !important;
+    bottom: 2px;
+    font-size: 18px;
+}
+
+/* Changing title/link colors */
+#siteTable div.thing a.title {
+    color: maroon;
+}
+#siteTable div.thing a.title:visited {
+    color: #929292;
+}
+
+/* Add custom upvote/downvote arrows*/
+.arrow.up {
+    background-image: url(%%upvote-circle%%);
+    background-position: 0px 0;
+}
+
+.arrow.down {
+    background-image: url(%%downvote-circle%%);
+    background-position: 0px 0;
+    height: 14px;
+}
+
+.arrow.upmod {
+    background-image: url(%%upvote-mod-circle%%);
+    background-position: 0px 0;
+}
+
+.arrow.downmod {
+    background-image: url(%%downvote-mod-circle%%);
+    background-position: 0px 0;
+    height: 14px;
+}
+
+/*Score*/
+.score{
+   font-family:arial,helvetica;
+   font-size: 14px;
+}
+.midcol .score.likes {
+    color: rgba(119,22,27,0.6);
+}
+.midcol .score.dislikes {
+    color: gold;
+}
+
+/*Thumbnail*/
+.thumbnail {
+    height: 50px;
+    margin-right: 10px;
+}
+.thumbnail.self {
+    background-image: url(%%v-basket-thumbnail%%);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 45px;
+}
+
+.thumbnail, a.thumbnail img {
+    height: 100%;
+    height: 50px;
+    width: 60px;
+
+}
+
+/*Link Flair*/
+.linkflair-open a.title:visited {
+  color: #009900!important;
+}
+.linkflair-one .linkflairlabel {
+   background-color: #F9AF46;
+   font-size: 11px;
+   font-weight: bold;
+   color: #860038;
+   border-radius: 3px;
+   border-left: 3px solid #CC3546;
+   padding: 3px;
+   max-width: 170px;
+ }
+
+
+
+
+
+
+/*
+SIDEBAR DESIGN
+*/
+/* Sidebar */
+.side{
+    /*background-color: #E9E7E9;*/
+    border-color: black;
+    margin: 0px 0px 0px 0px;
+    border-width: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    z-index: 9999;
+}
+
+/*Sidebar - Display 2016 banner instead of sub name*/
+.titlebox .redditname{
+    background-image: url(%%cavs-banners%%);
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 130px;
+    margin-bottom: 10px;
+    text-indent: -9999px;
+}
+
+
+/*Sidebar Headings - Schedule, , Eastern Conference Standing, Related subreddits*/
+/*Applies to tables not in sidebar - eg. Box scores/tables in posts*/
+.md h1 {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.titlebox .usertext .md>h1 {
+    background-color: rgb(114, 37, 61);
+    color: #FFFFFF;
+    border-left: 8px solid #FEB931;
+    padding: 12px;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+}
+
+.md th {
+    background-color: rgb(114, 37, 61)!important;
+    color: #FFF!important;
+}
+.md td {
+    border: 1px solid #cccccc;
+    background-color: white;
+}
+
+.expando .usertext-body table{
+   display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+/*Applies to tables in sidebar*/
+.side table {
+    background: #f2f2f2;
+    margin: 5px;
+}
+.side table thead {
+    background: #860038;
+    color: white;
+}
+.side table th {
+    text-align: center;
+}
+.side .md table {
+    width: 280px;
+    margin-left: 12px;
+}
+.side .md table th,
+.side .md table td {
+    padding: 1px 3px;
+}
+.md {
+    overflow: visible;
+}
+
+/*
+SEARCH BOX POSITION AND STYLE
+*/
+#search input[type="text"] {
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    height: 45px;
+    border-radius: 5px;
+}
+
+#searchexpando {
+    margin-bottom: 5px;
+
+    background-color: white;
+    border: 1px solid #ddd;
+}
+#searchexpando a {
+    color: #860038;
+
+}
+
+/*
+SUBMISSION LINK SPACING
+*/-
+.side .spacer {
+    margin: 7px 0 3px 0;
+}
+.srSep {
+    color: white;
+}
+.sr-bar .separator {
+    color: white;
+}
+.tagline a {
+    color: #860038;
+}
+.tagline a.author {
+    color: #860038;
+}
+
+/*Submit link and Submit Text buttons*/
+.submit .morelink {
+    height: 40px;
+    width: 290px;
+    background: rgb(114, 37, 61);
+    border-left: 8px solid #F9AF46;
+    text-transform: uppercase;
+}
+
+.morelink .nub {
+    visibility: hidden;
+}
+.morelink a {
+    color: white;
+    padding-top: 4px;
+}
+.morelink a:hover {
+    color: #F9AF46;
+}
+.pagename a {
+    color: gold;
+    letter-spacing: 0px;
+    margin-right: 3px;
+}
+
+
+
+
+
+/*
+replace "readers" with something else
+*/
+div.titlebox span.word {
+    display: none;
+}
+div.titlebox span.number:after {
+    content: " Cavs fans";
+}
+div.titlebox .users-online span.number:after {
+    content: " here now";
+}
+
+/*Add championship banner + numbers of legends
+.side .md h5 {
+    background-image: url(%%rafters%%);
+    height: 131px;
+    background-repeat: no-repeat;
+}*/
+
+/*Remove create your own subreddit button*/
+.sidebox.create .morelink {display: none;}
+
+.infobar {
+    background-color: rgba(252, 186, 49, 0.4);
+    border: 1px solid #860038;
+}
+.content.submit .info-notice {
+    background-color: rgba(252, 186, 49, 0.4);
+    border: 1px solid #860038;
+}
+#RESShortcuts {
+    color: white;
+}
+#RESShortcutsEditContainer {
+    background-color: transparent !important;
+}
+#RESShortcutsSort,
+#RESShortcutsRight,
+#RESShortcutsLeft,
+#RESShortcutsAdd,
+#RESShortcutsTrash {
+    background-color: transparent !important;
+    color: #F9AF46 !important;
+    margin-right: 5px;
+}
+.login-form-side {
+    border: 1px solid #ddd !important;
+}
+.login-form-side input[type=text],
+.login-form-side input[type=password] {
+    border: 1px solid #ddd !important;
+}
+.linkinfo {
+    background-color: white;
+    border: 1px solid #ddd;
+}
+.linkinfo .shortlink input {
+    border: 1px solid #ddd;
+}
+.link .usertext .md {
+    background-color: white;
+    border: 1px solid #860038;
+}
+.drop-choices a.choice {
+    color: black !important;
+}
+.drop-choices {
+    background-color: rgba(134, 21, 59, 1);
+    border: 1px solid #ddd;
+}
+.tagline .submitter {
+    color: #0055df !important;
+}
+.tagline .moderator,
+.green {
+    color: #228822 !important;
+}
+.drop-choices {
+    background-color: white !important;
+}
+.flairselector h2 {
+    background-color: white !important;
+    border: 1px solid #860038;
+    color: #860038;
+}
+.flairselector li a {
+    color: #860038 !important;
+}
+.comment .child,
+.comment .showreplies {
+    border-left: 1px solid #ddd;
+}
+.content {
+    margin: 0px;
+}
+
+.sheets .col textarea {
+    width: 90%;
+}
+ul.tabmenu.viewimages {
+    display: none !important;
+}
+.thing.comment .arrow.down:hover:before {
+    position: absolute;
+    display: block;
+    z-index: 1000;
+    width: 210px;
+    padding: 5px;
+    border: 1px solid #F9AF46;
+    background-color: #860038;
+    content: "Downvotes aren't for disagreements. If someone is breaking our rules, please hit the report button.";
+    text-align: center;
+    font-size: 10px;
+    color: #F9AF46;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-top: 5px
+}
+
+.md {
+  max-width:90em;
+}
+
+/*
+Banners Section - Rotates between the 9 different banners
+More instructions on changing the image below 
+*/
+#header {
+    background: url(%%banner%%); /* This is the default banner that will be seen by logged out users */
+    height: 315px; /* The height should be the height of the banners + 15px.*/
+    margin-left: -20px; /*Margin applied to move the banner to the left due to body width*/
+    margin-right: -20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#header-bottom-left {
+    position: absolute;
+    bottom: 0;
+}
+#header-bottom-right {
+    background-color: #F9AF46;
+}
+
+#header-bottom-right::before {
+    content: '';
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    height: 300px; /* Change to match the height of the banners. */
+    width: 100vw;
+    z-index: -1;
+}
+.res-navTop #header-bottom-right::before {
+    top: 0;
+    bottom: auto;
+}
+[name=uh] ~ a::before {
+    content: '';
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 100%;
+    margin-left: -100vw;
+    height: 300px; /* Change to match the height of the banners.*/
+    z-index: -2;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.res-navTop [name=uh] ~ a::before {
+    bottom: auto;
+    top: 0;
+}
+
+/* Banner rotates between these images, it has equal changes of changing to a certain image */
+/* Depends on alphanumerical values - 36 values split between 10 different images to rotate 
+   36/10 = 3. Each banner gets at least 3 values, the remaining six are split across banners that have more chances to appear
+   Change the banner images below as you see fit.
+*/
+input[name="uh"][value^="a"] ~ a::before,
+input[name="uh"][value^="b"] ~ a::before,
+input[name="uh"][value^="c"] ~ a::before,
+input[name="uh"][value^="d"] ~ a::before,
+input[name="uh"][value^="e"] ~ a::before,
+input[name="uh"][value^="f"] ~ a::before,
+input[name="uh"][value^="g"] ~ a::before,
+input[name="uh"][value^="h"] ~ a::before,
+input[name="uh"][value^="i"] ~ a::before,
+input[name="uh"][value^="j"] ~ a::before,
+input[name="uh"][value^="k"] ~ a::before,
+input[name="uh"][value^="l"] ~ a::before,
+input[name="uh"][value^="m"] ~ a::before,
+input[name="uh"][value^="n"] ~ a::before,
+input[name="uh"][value^="o"] ~ a::before,
+input[name="uh"][value^="p"] ~ a::before,
+input[name="uh"][value^="q"] ~ a::before,
+input[name="uh"][value^="r"] ~ a::before,
+input[name="uh"][value^="s"] ~ a::before,
+input[name="uh"][value^="t"] ~ a::before,
+input[name="uh"][value^="u"] ~ a::before,
+input[name="uh"][value^="v"] ~ a::before,
+input[name="uh"][value^="w"] ~ a::before,
+input[name="uh"][value^="x"] ~ a::before,
+input[name="uh"][value^="y"] ~ a::before,
+input[name="uh"][value^="z"] ~ a::before,
+input[name="uh"][value^="0"] ~ a::before,
+input[name="uh"][value^="1"] ~ a::before,
+input[name="uh"][value^="2"] ~ a::before,
+input[name="uh"][value^="3"] ~ a::before,
+input[name="uh"][value^="4"] ~ a::before,
+input[name="uh"][value^="5"] ~ a::before,
+input[name="uh"][value^="6"] ~ a::before,
+input[name="uh"][value^="7"] ~ a::before,
+input[name="uh"][value^="8"] ~ a::before,
+input[name="uh"][value^="9"] ~ a::before {
+  background: url(%%banner%%);
+}
+
+@media screen and (max-width: 1920px){
+    input[name="uh"][value^="a"] ~ a::before,
+    input[name="uh"][value^="b"] ~ a::before,
+    input[name="uh"][value^="c"] ~ a::before,
+    input[name="uh"][value^="d"] ~ a::before,
+    input[name="uh"][value^="e"] ~ a::before,
+    input[name="uh"][value^="f"] ~ a::before,
+    input[name="uh"][value^="g"] ~ a::before,
+    input[name="uh"][value^="h"] ~ a::before,
+    input[name="uh"][value^="i"] ~ a::before,
+    input[name="uh"][value^="j"] ~ a::before,
+    input[name="uh"][value^="k"] ~ a::before,
+    input[name="uh"][value^="l"] ~ a::before,
+    input[name="uh"][value^="m"] ~ a::before,
+    input[name="uh"][value^="n"] ~ a::before,
+    input[name="uh"][value^="o"] ~ a::before,
+    input[name="uh"][value^="p"] ~ a::before,
+    input[name="uh"][value^="q"] ~ a::before,
+    input[name="uh"][value^="r"] ~ a::before,
+    input[name="uh"][value^="s"] ~ a::before,
+    input[name="uh"][value^="t"] ~ a::before,
+    input[name="uh"][value^="u"] ~ a::before,
+    input[name="uh"][value^="v"] ~ a::before,
+    input[name="uh"][value^="w"] ~ a::before,
+    input[name="uh"][value^="x"] ~ a::before,
+    input[name="uh"][value^="y"] ~ a::before,
+    input[name="uh"][value^="z"] ~ a::before,
+    input[name="uh"][value^="0"] ~ a::before,
+    input[name="uh"][value^="1"] ~ a::before,
+    input[name="uh"][value^="2"] ~ a::before,
+    input[name="uh"][value^="3"] ~ a::before,
+    input[name="uh"][value^="4"] ~ a::before,
+    input[name="uh"][value^="5"] ~ a::before,
+    input[name="uh"][value^="6"] ~ a::before,
+    input[name="uh"][value^="7"] ~ a::before,
+    input[name="uh"][value^="8"] ~ a::before,
+    input[name="uh"][value^="9"] ~ a::before {
+      background: url(%%banner%%);
+    }
+}
+
+input[name="uh"][value] ~ a::before {
+    background-position: 50% 0; /* This centers the image horizontally */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*
+Flair
+*/
+.flairselector .customizer {
+    display: none !important;
+}
+.flair,
+.md [href^="/#"] {
+    border: none !important;
+    padding: 0px;
+    background: url(%%sprite-2022%%) no-repeat -9999px -9999px;
+    display: inline-block;
+}
+.flair-A,
+.md [href="/#A"] {
+    background-position: -5px -5px;
+    width: 27px;
+    height: 25px;
+}
+.flair-AA,
+.md [href="/#AA"] {
+    background-position: -5px -31px;
+    width: 41px;
+    height: 25px;
+}
+.flair-AB,
+.md [href="/#AB"] {
+    background-position: -5px -57px;
+    width: 25px;
+    height: 25px;
+}
+.flair-ABC,
+.md [href="/#ABC"] {
+    background-position: -5px -83px;
+    width: 25px;
+    height: 25px;
+}
+.flair-AC,
+.md [href="/#AC"] {
+    background-position: -5px -109px;
+    width: 15px;
+    height: 25px;
+}
+.flair-AD,
+.md [href="/#AD"] {
+    background-position: -5px -135px;
+    width: 29px;
+    height: 25px;
+}
+.flair-AE,
+.md [href="/#AE"] {
+    background-position: -5px -161px;
+    width: 19px;
+    height: 25px;
+}
+.flair-Atlanta,
+.md [href="/#Atlanta"] {
+    background-position: -5px -3790px;
+    width: 27px;
+    height: 27px;
+}
+.flair-B,
+.md [href="/#B"] {
+    background-position: -5px -210px;
+    width: 31px;
+    height: 25px;
+}
+.flair-Boston,
+.md [href="/#Boston"] {
+    background-position: -5px -3688px;
+    width: 27px;
+    height: 29px;
+}
+.flair-Brooklyn,
+.md [href="/#Brooklyn"] {
+    background-position: -5px -4076px;
+    width: 21px;
+    height: 27px;
+}
+.flair-C,
+.md [href="/#C"] {
+    background-position: -5px -282px;
+    width: 33px;
+    height: 17px;
+}
+.flair-Charlotte,
+.md [href="/#Charlotte"] {
+    background-position: -5px -3866px;
+    width: 27px;
+    height: 27px;
+}
+.flair-Chicago,
+.md [href="/#Chicago"] {
+    background-position: -5px -3623px;
+    width: 27px;
+    height: 28px;
+}
+.flair-D,
+.md [href="/#D"] {
+    background-position: -5px -349px;
+    width: 33px;
+    height: 25px;
+}
+.flair-Dallas,
+.md [href="/#Dallas"] {
+    background-position: -5px -4043px;
+    width: 27px;
+    height: 27px;
+}
+.flair-Denver,
+.md [href="/#Denver"] {
+    background-position: -5px -4109px;
+    width: 34px;
+    height: 22px;
+}
+.flair-Detroit,
+.md [href="/#Detroit"] {
+    background-position: -5px -4199px;
+    width: 27px;
+    height: 27px;
+}
+.flair-E,
+.md [href="/#E"] {
+    background-position: -5px -444px;
+    width: 36px;
+    height: 25px;
+}
+.flair-ESPN,
+.md [href="/#ESPN"] {
+    background-position: -5px -470px;
+    width: 50px;
+    height: 14px;
+}
+.flair-ESPN2,
+.md [href="/#ESPN2"] {
+    background-position: -5px -485px;
+    width: 50px;
+    height: 11px;
+}
+.flair-F,
+.md [href="/#F"] {
+    background-position: -5px -497px;
+    width: 43px;
+    height: 25px;
+}
+.flair-FSO,
+.md [href="/#FSO"] {
+    background-position: -5px -523px;
+    width: 29px;
+    height: 25px;
+}
+.flair-G,
+.md [href="/#G"] {
+    background-position: -5px -549px;
+    width: 15px;
+    height: 25px;
+}
+.flair-Golden-State,
+.md [href="/#Golden-State"] {
+    background-position: -5px -4439px;
+    width: 29px;
+    height: 33px;
+}
+.flair-H,
+.md [href="/#H"] {
+    background-position: -5px -598px;
+    width: 22px;
+    height: 25px;
+}
+.flair-Houston,
+.md [href="/#Houston"] {
+    background-position: -5px -4265px;
+    width: 32px;
+    height: 21px;
+}
+.flair-I,
+.md [href="/#I"] {
+    background-position: -5px -647px;
+    width: 17px;
+    height: 25px;
+}
+.flair-Indiana,
+.md [href="/#Indiana"] {
+    background-position: -5px -4136px;
+    width: 28px;
+    height: 28px;
+}
+.flair-J,
+.md [href="/#J"] {
+    background-position: -5px -696px;
+    width: 25px;
+    height: 33px;
+}
+.flair-K,
+.md [href="/#K"] {
+    background-position: -5px -730px;
+    width: 25px;
+    height: 38px;
+}
+.flair-L,
+.md [href="/#L"] {
+    background-position: -5px -769px;
+    width: 25px;
+    height: 25px;
+}
+.flair-LA,
+.md [href="/#LA"] {
+    background-position: -5px -3723px;
+    width: 32px;
+    height: 22px;
+}
+.flair-LAL,
+.md [href="/#LAL"] {
+    background-position: -5px -3986px;
+    width: 32px;
+    height: 21px;
+}
+.flair-M,
+.md [href="/#M"] {
+    background-position: -5px -841px;
+    width: 25px;
+    height: 25px;
+}
+.flair-Memphis,
+.md [href="/#Memphis"] {
+    background-position: -5px -3750px;
+    width: 27px;
+    height: 28px;
+}
+.flair-Miami,
+.md [href="/#Miami"] {
+    background-position: -5px -3825px;
+    width: 26px;
+    height: 35px;
+}
+.flair-Milwaukee,
+.md [href="/#Milwaukee"] {
+    background-position: -5px -3589px;
+    width: 22px;
+    height: 29px;
+}
+.flair-Minnesota,
+.md [href="/#Minnesota"] {
+    background-position: -5px -4373px;
+    width: 28px;
+    height: 27px;
+}
+.flair-N,
+.md [href="/#N"] {
+    background-position: -5px -959px;
+    width: 25px;
+    height: 25px;
+}
+.flair-NBA,
+.md [href="/#NBA"] {
+    background-position: -5px -985px;
+    width: 33px;
+    height: 22px;
+}
+.flair-NBATV,
+.md [href="/#NBATV"] {
+    background-position: -5px -1008px;
+    width: 26px;
+    height: 25px;
+}
+.flair-New-Orleans,
+.md [href="/#New-Orleans"] {
+    background-position: -5px -4170px;
+    width: 34px;
+    height: 25px;
+}
+.flair-NYK,
+.md [href="/#NYK"] {
+    background-position: -5px -3952px;
+    width: 32px;
+    height: 26px;
+}
+.flair-O,
+.md [href="/#O"] {
+    background-position: -5px -1080px;
+    width: 25px;
+    height: 25px;
+}
+.flair-Oklahoma-City,
+.md [href="/#Oklahoma-City"] {
+    background-position: -5px -4341px;
+    width: 30px;
+    height: 29px;
+}
+.flair-Orlando,
+.md [href="/#Orlando"] {
+    background-position: -5px -4012px;
+    width: 32px;
+    height: 24px;
+}
+.flair-P,
+.md [href="/#P"] {
+    background-position: -5px -1152px;
+    width: 25px;
+    height: 25px;
+}
+.flair-Philly,
+.md [href="/#Philly"] {
+    background-position: -5px -3559px;
+    width: 27px;
+    height: 27px;
+}
+.flair-Phoenix,
+.md [href="/#Phoenix"] {
+    background-position: -5px -4306px;
+    width: 27px;
+    height: 27px;
+}
+.flair-Portland,
+.md [href="/#Portland"] {
+    background-position: -5px -4405px;
+    width: 34px;
+    height: 27px;
+}
+.flair-Q,
+.md [href="/#Q"] {
+    background-position: -5px -1247px;
+    width: 25px;
+    height: 25px;
+}
+.flair-R,
+.md [href="/#R"] {
+    background-position: -5px -1273px;
+    width: 25px;
+    height: 25px;
+}
+.flair-S,
+.md [href="/#S"] {
+    background-position: -5px -1299px;
+    width: 25px;
+    height: 25px;
+}
+.flair-San-Antonio,
+.md [href="/#San-Antonio"] {
+    background-position: -5px -4286px;
+    width: 34px;
+    height: 20px;
+}
+.flair-Sacramento,
+.md [href="/#Sacramento"] {
+    background-position: -5px -3920px;
+    width: 27px;
+    height: 27px;
+}
+.flair-Seattle,
+.md [href="/#Seattle"] {
+    background-position: -5px -1371px;
+    width: 31px;
+    height: 22px;
+}
+.flair-T,
+.md [href="/#T"] {
+    background-position: -5px -1394px;
+    width: 25px;
+    height: 25px;
+}
+.flair-TNT,
+.md [href="/#TNT"] {
+    background-position: -5px -1420px;
+    width: 50px;
+    height: 22px;
+}
+.flair-Toronto,
+.md [href="/#Toronto"] {
+    background-position: -5px -4231px;
+    width: 27px;
+    height: 28px;
+}
+.flair-U,
+.md [href="/#U"] {
+    background-position: -5px -1466px;
+    width: 25px;
+    height: 25px;
+}
+.flair-USA,
+.md [href="/#USA"] {
+    background-position: -5px -1492px;
+    width: 33px;
+    height: 22px;
+}
+.flair-Utah,
+.md [href="/#Utah"] {
+    background-position: -5px -3888px;
+    width: 32px;
+    height: 23px;
+}
+.flair-V,
+.md [href="/#V"] {
+    background-position: -5px -1538px;
+    width: 25px;
+    height: 25px;
+}
+.flair-Verified,
+.md [href="/#Verified"] {
+    background-position: -5px -1564px;
+    width: 58px;
+    height: 25px;
+}
+.flair-W,
+.md [href="/#W"] {
+    background-position: -5px -1590px;
+    width: 44px;
+    height: 25px;
+}
+.flair-Washington,
+.md [href="/#Washington"] {
+    background-position: -5px -4476px;
+    width: 28px;
+    height: 28px;
+}
+.flair-X,
+.md [href="/#X"] {
+    background-position: -5px -1642px;
+    width: 19px;
+    height: 25px;
+}
+.flair-Y,
+.md [href="/#Y"] {
+    background-position: -5px -1668px;
+    width: 25px;
+    height: 25px;
+}
+.flair-Z,
+.md [href="/#Z"] {
+    background-position: -5px -1694px;
+    width: 23px;
+    height: 25px;
+}
+.flair-Swish,
+.md [href="/#Swish"] {
+    background-position: -5px -1720px;
+    width: 22px;
+    height: 25px;
+}
+.flair-TT,
+.md [href="/#TT"] {
+    background-position: -5px -1746px;
+    width: 18px;
+    height: 21px;
+}
+
+.flair-Shump,
+.md [href="/#Shump"] {
+    background-position: -5px -1767px;
+    width: 19px;
+    height: 26px;
+}
+.flair-Moz,
+.md [href="/#Moz"] {
+    background-position: -5px -1794px;
+    width: 25px;
+    height: 20px;
+}
+.flair-Lue,
+.md [href="/#Lue"] {
+    background-position: -5px -1816px;
+    width: 20px;
+    height: 20px;
+}
+.flair-Nacho,
+.md [href="/#Nacho"] {
+    background-position: -5px -1838px;
+    width: 38px;
+    height: 22px;
+}
+.flair-PBD,
+.md [href="/#PBD"] {
+    background-position: -5px -1863px;
+    width: 26px;
+    height: 36px;
+}
+.flair-Lelbron,
+.md [href="/#Lelbron"] {
+    background-position: -5px -1901px;
+    width: 26px;
+    height: 34px;
+}
+.flair-Tray,
+.md [href="/#Tray"] {
+    background-position: -5px -1936px;
+    width: 38px;
+    height: 29px;
+}
+.flair-Bear,
+.md [href="/#Bear"] {
+    background-position: -5px -1967px;
+    width: 25px;
+    height: 26px;
+}
+.flair-Prince,
+.md [href="/#Prince"] {
+    background-position: -5px -1996px;
+    width: 29px;
+    height: 35px;
+}
+.flair-Pipe,
+.md [href="/#Pipe"] {
+    background-position: -5px -2034px;
+    width: 20px;
+    height: 31px;
+}
+.flair-lilkev,
+.md [href="/#lilkev"] {
+    background-position: -5px -2072px;
+    width: 24px;
+    height: 30px;
+}
+.flair-CHAMPS,
+.md [href="/#CHAMPS"] {
+    background-position: -5px -2107px;
+    width: 24px;
+    height: 44px;
+}
+.flair-kyriesmug,.md [href="/#kyriesmug"] {
+    background-position: -5px -2153px;
+    width: 28px;
+    height: 33px;
+}
+.flair-korver,.md [href="/#korver"] {
+    background-position: -5px -2189px;
+    width: 27px;
+    height: 31px;
+}
+.flair-champ,.md [href="/#champ"] {
+    background-position: -5px -2223px;
+    width: 26px;
+    height: 32px;
+}
+.flair-flatearth,.md [href="/#flatearth"] {
+    background-position: -5px -2258px;
+    width: 46px;
+    height: 32px;
+}
+.flair-moondog1,.md [href="/#moondog11"] {
+    background-position: -5px -2292px;
+    width: 36px;
+    height: 32px;
+}
+.flair-moondog2,.md [href="/#moondog2"] {
+    background-position: -5px -2327px;
+    width: 34px;
+    height: 32px;
+}
+.flair-RJ,.md [href="/#RJ"] {
+    background-position: -5px -2360px;
+    width: 24px;
+    height: 36px;
+}
+.flair-shrug,.md [href="/#shrug"] {
+    background-position: -5px -2396px;
+    width: 29px;
+    height: 34px;
+}
+.flair-shump2,.md [href="/#shumpm2"] {
+    background-position: -5px -2433px;
+    width: 35px;
+    height: 34px;
+}
+.flair-saiyan,.md [href="/#saiyan"] {
+    background-position: -5px -2471px;
+    width: 42px;
+    height: 33px;
+}
+.flair-TThat,.md [href="/#TThat"] {
+    background-position: -5px -2505px;
+    width: 42px;
+    height: 32px;
+}
+.flair-GriffWiz,.md [href="/#GrifWiz"] {
+    background-position: -5px -2540px;
+    width: 22px;
+    height: 35px;
+}
+.flair-Allie,.md [href="/#Allie"] {
+    background-position: -5px -2576px;
+    width: 36px;
+    height: 32px;
+}
+.flair-Bogut,.md [href="/#Bogut"] {
+    background-position: -5px -2611px;
+    width: 25px;
+    height: 32px;
+}
+.flair-scowl,.md [href="/#scowl"] {
+    background-position: -5px -2645px;
+    width: 24px;
+    height: 32px;
+}
+.flair-Dan,.md [href="/#Dan"] {
+    background-position: -5px -2680px;
+    width: 30px;
+    height: 32px;
+}
+.flair-DWill,.md [href="/#DWill"] {
+    background-position: -5px -2714px;
+    width: 23px;
+    height: 32px;
+}
+.flair-DThrill,.md [href="/#DThrill"] {
+    background-position: -5px -2749px;
+    width: 38px;
+    height: 32px;
+}
+.flair-FredAC,.md [href="/#FredAC"] {
+    background-position: -5px -2783px;
+    width: 58px;
+    height: 32px;
+}
+.flair-Frye,.md [href="/#Frye"] {
+    background-position: -5px -2817px;
+    width: 27px;
+    height: 40px;
+}
+.flair-Channing,.md [href="/#Channing"] {
+    background-position: -5px -2859px;
+    width: 34px;
+    height: 32px;
+}
+.flair-Griff,.md [href="/#Griff"] {
+    background-position: -5px -2897px;
+    width: 34px;
+    height: 32px;
+}
+.flair-Griffin,.md [href="/#Griffin"] {
+    background-position: -5px -2932px;
+    width: 26px;
+    height: 32px;
+}
+.flair-coach,.md [href="/#coach"] {
+    background-position: -5px -2967px;
+    width: 24px;
+    height: 32px;
+}
+.flair-throwback1,.md [href="/#throwback1"] {
+    background-position: -5px -3003px;
+    width: 28px;
+    height: 32px;
+}
+.flair-throwback2,.md [href="/#throwback2"] {
+    background-position: -5px -3036px;
+    width: 32px;
+    height: 32px;
+}
+.flair-throwback3,.md [href="/#throwback3"] {
+    background-position: -5px -3071px;
+    width: 31px;
+    height: 29px;
+}
+.flair-throwback4,.md [href="/#throwback4"] {
+    background-position: -5px -3105px;
+    width: 31px;
+    height: 31px;
+}
+.flair-throwback5,.md [href="/#throwback5"] {
+    background-position: -5px -3140px;
+    width: 31px;
+    height: 32px;
+}
+.flair-smirk,.md [href="/#smirk"] {
+    background-position: -5px -3174px;
+    width: 24px;
+    height: 31px;
+}
+.flair-beer,.md [href="/#beer"] {
+    background-position: -5px -3209px;
+    width: 35px;
+    height: 34px;
+}
+.flair-crest,.md [href="/#crest"] {
+    background-position: -5px -3656px;
+    width: 20px;
+    height: 27px;
+}
+.flair-cedi,.md [href="/#cedi"] {
+    background-position: -5px -3292px;
+    width: 25px;
+    height: 35px;
+}
+.flair-allen,.md [href="/#allen"] {
+    background-position: -5px -3328px;
+    width: 26px;
+    height: 35px;
+}
+.flair-okoro,.md [href="/#okoro"] {
+    background-position: -5px -3368px;
+    width: 24px;
+    height: 35px;
+}
+.flair-garland,.md [href="/#garland"] {
+    background-position: -5px -3408px;
+    width: 26px;
+    height: 30px;
+}
+.flair-deanwade,.md [href="/#deanwade"] {
+    background-position: -5px -3445px;
+    width: 25px;
+    height: 32px;
+}
+.flair-lamarstevens,.md [href="/#lamarstevens"] {
+    background-position: -5px -3481px;
+    width: 27px;
+    height: 36px;
+}
+.flair-Gee,.md [href="/#Gee"] {
+    background-position: -5px -3520px;
+    width: 30px;
+    height: 35px;
+}
+.flair-DRose,.md [href="/#DRose"] {
+    background-position: -5px -4510px;
+    width: 30px;
+    height: 34px;
+}
+.flair-DWade,.md [href="/#DWade"] {
+    background-position: -5px -4549px;
+    width: 30px;
+    height: 35px;
+}
+.flair-Wade,.md [href="/#Wade"] {
+    background-position: -5px -4589px;
+    width: 30px;
+    height: 35px;
+}
+.flair-flash,.md [href="/#flash"] {
+    background-position: -5px -4630px;
+    width: 32px;
+    height: 26px;
+}
+.flair-Return,.md [href="/#Return"] {
+    background-position: -5px -4659px;
+    width: 56px;
+    height: 26px;
+}
+
+.flair-JG,.md [href="/#green"] {
+    background-position: -5px -4705px;
+    width: 28px;
+    height: 32px;
+}
+
+.flair-Clarkson,.md [href="/#clarkson"] {
+    background-position: -5px -4747px;
+    width: 28px;
+    height: 34px;
+}
+
+
+.flair-Hill,.md [href="/#hill"] {
+    background-position: -5px -4789px;
+    width: 26px;
+    height: 34px;
+}
+
+
+.flair-Hood,.md [href="/#hood"] {
+    background-position: -5px -4832px;
+    width: 28px;
+    height: 34px;
+}
+
+.flair-Love1,.md [href="/#love1"] {
+    background-position: -5px -4877px;
+    width: 22px;
+    height: 31px;
+}
+
+.flair-Love2,.md [href="/#love2"] {
+    background-position: -5px -4918px;
+    width: 42px;
+    height: 38px;
+}
+
+.flair-Love3,.md [href="/#love3"] {
+    background-position: -5px -4966px;
+    width: 32px;
+    height: 30px;
+}
+
+.flair-Sexton1,.md [href="/#sexton1"] {
+    background-position: -5px -5015px;
+    width: 28px;
+    height: 31px;
+}
+
+.flair-Sexton2,.md [href="/#sexton2"] {
+    background-position: -5px -5053px;
+    width: 28px;
+    height: 32px;
+}
+
+.flair-Sexton3,.md [href="/#sexton3"] {
+    background-position: -5px -5094px;
+    width: 32px;
+    height: 30px;
+}
+
+.flair-Zizic,.md [href="/#zizic"] {
+    background-position: -5px -5132px;
+    width: 28px;
+    height: 34px;
+}
+
+
+.flair-Nance,.md [href="/#nance"] {
+    background-position: -5px -5176px;
+    width: 30px;
+    height: 34px;
+}
+
+
+.flair-Nance2,.md [href="/#nance2"] {
+    background-position: 0px -5212px;
+    width: 39px;
+    height: 40px;
+}
+
+
+.flair-Nance3,.md [href="/#nance3"] {
+    background-position: 0px -5255px;
+    width: 24px;
+    height: 37px;
+    top: -200px;
+}
+
+
+.flair-mobley,.md [href="/#mobley"] {
+    background-position: 0px -5292px;
+    width: 39px;
+    height: 37px;
+}
+
+.flair-rubio,.md [href="/#rubio"] {
+    background-position: 0px -5332px;
+    width: 39px;
+    height: 37px;
+}
+
+.flair-lauri,.md [href="/#lauri"] {
+    background-position: 0px -5370px;
+    width: 39px;
+    height: 37px;
+}
+
+.flair-windler,.md [href="/#windler"] {
+    background-position: 0px -5405px;
+    width: 39px;
+    height: 37px;
+}
+
+.flair-pangos,.md [href="/#pangos"] {
+    background-position: 0px -5442px;
+    width: 39px;
+    height: 37px;
+}
+
+.flair-eddavis,.md [href="/#eddavis"] {
+    background-position: 0px -5478px;
+    width: 39px;
+    height: 37px;
+}
+
+.flair-nembhard,.md [href="/#nembhard"] {
+    background-position: 0px -5513px;
+    width: 39px;
+    height: 37px;
+}
+
+.flair-valentine,.md [href="/#valentine"] {
+    background-position: 0px -5549px;
+    width: 39px;
+    height: 37px;
+}
+
+.flair-fall,.md [href="/#fall"] {
+    background-position: 0px -5585px;
+    width: 39px;
+    height: 37px;
+}
+
+.flair-okoro-sneer,.md [href="/#okoro-sneer"] {
+    background-position: 0px -5625px;
+    width: 39px;
+    height: 31px;
+}
+
+.flair-agbaji,.md [href="/#agbaji"] {
+    background-position: 0px -5660px;
+    width: 39px;
+    height: 37px;
+}
+
+.flair-robin-lopez,.md [href="/#robin-lopezr"] {
+    background-position: 0px -5705px;
+    width: 39px;
+    height: 31px;
+}
+
+.flair-raul-neto,.md [href="/#raul-neto"] {
+    background-position: 0px -5740px;
+    width: 39px;
+    height: 31px;
+}
+
+.flair-spain-flag,.md [href="/#spain-flag"] {
+    background-position: 0px -5777px;
+    width: 39px;
+    height: 20px;
+}
+
+.flair-finland-flag,.md [href="/#finland-flag"] {
+    background-position: 0px -5799px;
+    width: 39px;
+    height: 20px;
+}
+
+.flair-turkey-flag,.md [href="/#turkey-flag"] {
+    background-position: 0px -5823px;
+    width: 39px;
+    height: 20px;
+}
+
+.flair-brazil-flag,.md [href="/#brazil-flag"] {
+    background-position: 0px -5845px;
+    width: 39px;
+    height: 20px;
+}
+
+/*Hide the text values from the MD tables*/
+.md [href^="/#"] {
+    text-indent:-99999px;
+}
+
+.thing[data-fullname$="a"]>.midcol>.upmod:focus::after{content:"Stunning"}
+
+.thing[data-fullname$="b"]>.midcol>.upmod:focus::after{content:"Fabulous"}
