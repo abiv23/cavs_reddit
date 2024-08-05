@@ -1,1 +1,6 @@
-Will add to this later if needed, but this is a backup for modding reddit
+This is a repo for backing up the various files associated with moderating the cavs subreddit
+
+So far we have:
+
+* auto-mod.yml
+* subreddit styling
